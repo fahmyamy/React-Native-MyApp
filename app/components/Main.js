@@ -70,7 +70,7 @@ export default class Main extends React.Component {
   	}
   }
 
-  deleteNote() {
+  deleteNote(key) {
   	this.state.noteArray.splice(key, 1);
   	this.setState({ noteArray: this.state.noteArray })
   }
